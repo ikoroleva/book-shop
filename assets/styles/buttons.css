@@ -1,0 +1,16 @@
+.btn_1 {
+    height: 30px;
+    width: 100px;
+    background-color: #2F2F2F;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.submit_btn {
+    width: 129px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2F2F2F;
+}
