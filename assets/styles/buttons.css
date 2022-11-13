@@ -7,6 +7,15 @@
     color: #FFFFFF;
 }
 
+.btn_2 {
+    height: 30px;
+    width: 100px;
+    background-color: #BFA054;
+    border-radius: 5px;
+    border: none;
+    color: #2F2F2F;
+}
+
 .submit_btn {
     width: 129px;
     height: 42px;

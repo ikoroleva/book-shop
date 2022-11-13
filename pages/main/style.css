@@ -69,9 +69,64 @@
     display: flex;
 }
 
-.book-actions>a {
-    padding-right: 30px;
-    /* text-decoration: none; */
-    color: #858585;
-    padding-top: 3px;
+.book-actions>button {
+    margin-right: 10px;
+}
+
+.modal {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.modal .modal-content {
+    visibility: hidden;
+    width: 900px;
+    background-color: #555;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 8px 20px;
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    margin-left: -70px;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+.modal-content p {
+    margin: 10px 0;
+}
+
+/* The Close Button */
+.close {
+    display: flex;
+    justify-content: end;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal .modal-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.modal .show {
+    visibility: visible;
 }
