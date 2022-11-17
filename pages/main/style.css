@@ -24,15 +24,18 @@
 }
 
 .book-img {
-    border-radius: 20px;
-    width: 200px;
-    height: 200px;
+    /* border-radius: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
     overflow: hidden;
 }
 
 .book-img>img {
     height: 100%;
-    width: 100%;
+    /* width: 110%; */
 
 }
 
