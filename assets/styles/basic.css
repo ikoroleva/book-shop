@@ -10,13 +10,13 @@ html {
 
 body {
     font-family: 'Kantumruy Pro', sans-serif;
-    background-color: #F1F3F2;
+    background-color: #FBF8F2;
     margin: 0;
     padding: 0;
 }
 
 .container-centered {
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
     background-color: #FBF8F2;
     display: flex;
