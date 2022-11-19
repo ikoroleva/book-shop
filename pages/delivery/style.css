@@ -1,0 +1,40 @@
+.order-form {
+    width: 900px;
+    background-color: #2F2F2F;
+    margin: 0 auto;
+    padding: 2em;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    border-radius: 3px;
+}
+
+.order-form_input {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-top: .7em;
+}
+
+.order-form_input label {
+    text-transform: uppercase;
+}
+
+
+.order-form_radio {
+    margin: 0;
+    border: none;
+    padding: .7em 0;
+}
+
+.order-form_checkbox {
+    margin: 0;
+    border: none;
+    padding: .3em 0;
+}
+
+.checkbox_option {
+    text-transform: none;
+    padding: .2em 0;
+
+}

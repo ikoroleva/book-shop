@@ -294,7 +294,7 @@ cartModal.innerHTML += `<div class="modal-cart-content">
     <p class="total-price-amount">0</p>
 </div>
 <div class="checkout">
-    <a href="#"><button class="cart-order_btn">Confirm order</button></a>
+    <a href="../delivery/index.html"><button class="cart-order_btn">Confirm order</button></a>
 </div>
 </div>`;
 

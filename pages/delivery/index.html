@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order detailes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kantumruy+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../assets/styles/basic.css">
+    <link rel="stylesheet" href="../../assets/styles/header.css">
+    <link rel="stylesheet" href="../../assets/styles/footer.css">
+    <link rel="stylesheet" href="../../assets/styles/buttons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-centered">
+        <!-- header -->
+        <main>
+            <section class="delivery-section">
+                <a href="../main/index.html" class="home-link">Back to Catalog</a>
+                <h1 class="section-header">Order detailes</h1>
+                <form class="order-form" action="">
+                    <fieldset class="client-info">
+                        <legend>Shipping details</legend>
+                        <div class="order-form_row">
+                            <div class="order-form_input">
+                                <label for="first-name">First name: </label>
+                                <input type="text" name="first-name" placeholder="Your first name" required
+                                    minlength="4" />
+                            </div>
+                            <div class="order-form_input">
+                                <label for="last-name">Last name: </label>
+                                <input type="text" name="last-name" placeholder="Your last name" required
+                                    minlength="5" />
+                            </div>
+                        </div>
+                        <div class="order-form_input">
+                            <label for="delivery-date">Delivery date: </label>
+                            <input type="date" name="delivery-date" />
+                        </div>
+                    </fieldset>
+                    <fieldset class="address">
+                        <legend>Address</legend>
+                        <div class="order-form_input">
+                            <label for="street">Street: </label>
+                            <input type="text" placeholder="Street" name="street" required minlength="5" />
+                        </div>
+                        <div class="order-form_row">
+                            <div class="order-form_input">
+                                <label for="house">House number: </label>
+                                <input type="text" placeholder="House number" name="house" required />
+                            </div>
+                            <div class="order-form_input">
+                                <label for="flat">Flat number: </label>
+                                <input type="text" placeholder="Flat number" name="flat" required />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="order-form_radio">
+                        <legend>Payment type</legend>
+
+                        <div class="radio-input">
+                            <input type="radio" id="cash" name="cash" value="cash">
+                            <label for="cash">Cash</label>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" id="card" name="card" value="card">
+                            <label for="card">Card</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="order-form_checkbox">
+                        <legend>Choose 2 gifts: (optional)</legend>
+                        <div class="checkbox_option">
+                            <input type="checkbox" id="gift-packing" name="gift-packing">
+                            <label for="gift-packing">Pack as a gift</label>
+                        </div>
+                        <div class="checkbox_option">
+                            <input type="checkbox" id="postcard" name="postcard">
+                            <label for="postcard">Add a postcard</label>
+                        </div>
+                        <div class="checkbox_option">
+                            <input type="checkbox" id="discount" name="discount">
+                            <label for="discount">Provide 2% discount to the next time</label>
+                        </div>
+                        <div class="checkbox_option">
+                            <input type="checkbox" id="pen-or-pencil" name="pen-or-pencil">
+                            <label for="pen-or-pencil">Branded pen or pencil</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit" disabled>Complete order</button>
+                </form>
+            </section>
+        </main>
+        <!-- footer -->
+    </div>
+    <script src="./order.js"></script>
+</body>
+
+</html>
