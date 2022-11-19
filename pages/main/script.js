@@ -206,7 +206,7 @@ const addToCart = (card) => {
 
         item.append(deleteBtnEl);
 
-        //add item to the cart
+        // add item to the cart
         const modalCartBody = cartModal.querySelector('.modal-cart-body');
         modalCartBody.append(item);
 
@@ -214,15 +214,19 @@ const addToCart = (card) => {
 
         e.target.setAttribute('disabled', '');
 
+        //increase total sum
+        const totalPrice = document.querySelector('.total-price-amount');
+        totalPrice.innerHTML = +totalPrice.innerHTML + +bookPrice;
+
         //delete items from the cart
         deleteBtn.addEventListener('click', () => {
             e.target.disabled = false;
             item.remove();
-        })
-
+            totalPrice.innerHTML = +totalPrice.innerHTML - +bookPrice;
+        });
 
         //increase counter in the cart
-        //increase total sum
+
 
     });
 }
@@ -287,10 +291,10 @@ cartModal.innerHTML += `<div class="modal-cart-content">
 <div class="total-price">
     <p>Total</p>
     <img class="book-price-currency" src="../../assets/icons/currency-usd.svg" alt="currency usd">
-    <p class="book-price-amount">30</p>
+    <p class="total-price-amount">0</p>
 </div>
 <div class="checkout">
-    <a href=""><button class="cart-order_btn">Confirm order</button></a>
+    <a href="#"><button class="cart-order_btn">Confirm order</button></a>
 </div>
 </div>`;
 

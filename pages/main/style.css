@@ -202,7 +202,7 @@
 
 .cart-item>img {
     width: 100px;
-    height: auto;
+    height: 100%;
 }
 
 .cart-item-description {
