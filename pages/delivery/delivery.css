@@ -44,7 +44,8 @@ fieldset {
 
 
 .input-group input {
-    outline: none;
+    /* outline: none; */
+    /* border: 1px solid transparent; */
     border: none;
     background: none;
     width: 100%;
@@ -54,6 +55,17 @@ fieldset {
     letter-spacing: .08em;
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .4),
         inset -1px -1px 2px rgba(55, 55, 55, .3);
+}
+
+.input-group input.error-input {
+    /* border: 1px solid rgba(255, 0, 0, 0.692); */
+    box-shadow: inset 1px 1px 2px rgba(255, 0, 0, 0.692),
+        inset -1px -1px 2px rgba(255, 0, 0, 0.692);
+}
+
+.error-msg {
+    color: rgba(255, 0, 0, 0.692);
+    display: none;
 }
 
 .input-group label {
@@ -118,8 +130,6 @@ input[type="radio"]:focus+label {
 
 }
 
-
-
 .checkbox_option input+label {
     user-select: none;
 }
@@ -162,7 +172,6 @@ input[type="radio"]:focus+label {
 .checkbox_option input:focus+label:before {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
 }
-
 
 .checkbox_option input:disabled+label:before,
 .checkbox_option input:disabled+label:after {

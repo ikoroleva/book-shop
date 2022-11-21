@@ -33,18 +33,23 @@
                         <div class="order-form_row">
                             <div class="input-group">
                                 <label for="first-name">First name: </label>
-                                <input type="text" name="first-name" placeholder="Enter your first name" required
-                                    minlength="4" />
+                                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"
+                                    required minlength="4" />
+                                <span class="error-msg">*Please enter not less than 4 characters</span>
                             </div>
                             <div class="input-group">
                                 <label for="last-name">Last name: </label>
-                                <input type="text" name="last-name" placeholder="Enter your last name" required
-                                    minlength="5" />
+                                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"
+                                    required minlength="5" />
+                                <span class="error-msg">*Please enter not less than 5 characters</span>
                             </div>
                         </div>
                         <div class="input-group">
                             <label for="delivery-date">Delivery date: </label>
-                            <input type="date" name="delivery-date" />
+                            <input type="date" id="delivery-date" name="delivery-date" required />
+                            <span class="error-msg">*The field is invalid. Delivery date should not earlier than the
+                                next
+                                day</span>
                         </div>
                     </div>
                     <fieldset class="address">
@@ -53,16 +58,21 @@
                     <div class="fields-container">
                         <div class="input-group">
                             <label for="street">Street: </label>
-                            <input type="text" placeholder="Street" name="street" required minlength="5" />
+                            <input type="text" id="street" placeholder="Street" name="street" minlength="5" required />
+                            <span class="error-msg">*The field is invalid</span>
                         </div>
                         <div class="order-form_row">
                             <div class="input-group">
                                 <label for="house">House number: </label>
-                                <input type="text" placeholder="Enter your house number" name="house" required />
+                                <input type="text" id="house" placeholder="Enter your house number" name="house"
+                                    required />
+                                <span class="error-msg">*The field is invalid</span>
                             </div>
                             <div class="input-group">
                                 <label for="flat">Flat number: </label>
-                                <input type="text" placeholder="Enter your flat number" name="flat" required />
+                                <input type="text" id="flat" placeholder="Enter your flat number" name="flat"
+                                    required />
+                                <span class="error-msg">*The field is invalid</span>
                             </div>
                         </div>
                     </div>
@@ -71,7 +81,7 @@
                     </fieldset>
                     <div class="radio-fields-container">
                         <div class="radio-input">
-                            <input type="radio" id="cash" name="payment-type" value="cash">
+                            <input type="radio" id="cash" name="payment-type" value="cash" checked>
                             <label for="cash"><i class="fa-solid fa-money-bill"></i> Cash</label>
                         </div>
                         <div class="radio-input">
@@ -84,7 +94,7 @@
                     </fieldset>
                     <div class="checkbox-fields-container">
                         <div class="checkbox_option">
-                            <input type="checkbox" id="gift-packing" name="gift-packing" checked>
+                            <input type="checkbox" id="gift-packing" name="gift-packing">
                             <label for="gift-packing">Pack as a gift</label>
                         </div>
                         <div class="checkbox_option">
@@ -99,6 +109,7 @@
                             <input type="checkbox" id="pen-or-pencil" name="pen-or-pencil">
                             <label for="pen-or-pencil">Branded pen or pencil</label>
                         </div>
+                        <span class="error-msg">*You can choose only two gifts</span>
                     </div>
                     <button class="btn_1" type="submit" disabled>Complete order</button>
                 </form>
