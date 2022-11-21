@@ -1,7 +1,7 @@
 /* FOOTER */
 
 footer {
-    background: #BDBDBD;
+    background: #333B41;
     padding: 35px;
 }
 
@@ -18,18 +18,18 @@ footer {
 
 }
 
-.footer__logo>img {
+.footer__logo>a>img {
     width: 200px;
 }
 
 .subsribe-section>h3 {
-    color: #333B41;
+    color: #F1F3F2;
     margin: 5px 0;
 }
 
 .subsribe-section>input {
     border-radius: 2px;
-    border: 0.7px solid #333B41;
+    border: 0.7px solid #F1F3F2;
     width: 228px;
     height: 42px;
     background-color: transparent;
@@ -74,13 +74,13 @@ footer {
     align-items: center;
     width: 26px;
     height: 26px;
-    background: #333B41;
+    background: #555555;
     border-radius: 50%;
 }
 
 
 .social-link>p {
-    color: #333B41;
+    color: #F1F3F2;
     margin: 3px;
     padding: 0 15px;
 }
