@@ -22,3 +22,16 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.section {
+    padding: 50px;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-family: 'DM Serif Display', serif;
+    color: #2F2F2F;
+    font-size: 2rem;
+    margin: 0;
+}

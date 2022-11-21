@@ -11,75 +11,80 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kantumruy+Pro:wght@300;400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="../../assets/styles/basic.css">
     <link rel="stylesheet" href="../../assets/styles/header.css">
     <link rel="stylesheet" href="../../assets/styles/footer.css">
     <link rel="stylesheet" href="../../assets/styles/buttons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="delivery.css">
+    <script src="https://kit.fontawesome.com/c9724870cd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container-centered">
-        <!-- header -->
         <main>
-            <section class="delivery-section">
+            <section class="section">
                 <a href="../main/index.html" class="home-link">Back to Catalog</a>
                 <h1 class="section-header">Order detailes</h1>
                 <form class="order-form" action="">
                     <fieldset class="client-info">
                         <legend>Shipping details</legend>
+                    </fieldset>
+                    <div class="fields-container">
                         <div class="order-form_row">
-                            <div class="order-form_input">
+                            <div class="input-group">
                                 <label for="first-name">First name: </label>
-                                <input type="text" name="first-name" placeholder="Your first name" required
+                                <input type="text" name="first-name" placeholder="Enter your first name" required
                                     minlength="4" />
                             </div>
-                            <div class="order-form_input">
+                            <div class="input-group">
                                 <label for="last-name">Last name: </label>
-                                <input type="text" name="last-name" placeholder="Your last name" required
+                                <input type="text" name="last-name" placeholder="Enter your last name" required
                                     minlength="5" />
                             </div>
                         </div>
-                        <div class="order-form_input">
+                        <div class="input-group">
                             <label for="delivery-date">Delivery date: </label>
                             <input type="date" name="delivery-date" />
                         </div>
-                    </fieldset>
+                    </div>
                     <fieldset class="address">
                         <legend>Address</legend>
-                        <div class="order-form_input">
+                    </fieldset>
+                    <div class="fields-container">
+                        <div class="input-group">
                             <label for="street">Street: </label>
                             <input type="text" placeholder="Street" name="street" required minlength="5" />
                         </div>
                         <div class="order-form_row">
-                            <div class="order-form_input">
+                            <div class="input-group">
                                 <label for="house">House number: </label>
-                                <input type="text" placeholder="House number" name="house" required />
+                                <input type="text" placeholder="Enter your house number" name="house" required />
                             </div>
-                            <div class="order-form_input">
+                            <div class="input-group">
                                 <label for="flat">Flat number: </label>
-                                <input type="text" placeholder="Flat number" name="flat" required />
+                                <input type="text" placeholder="Enter your flat number" name="flat" required />
                             </div>
                         </div>
-                    </fieldset>
+                    </div>
                     <fieldset class="order-form_radio">
                         <legend>Payment type</legend>
-
-                        <div class="radio-input">
-                            <input type="radio" id="cash" name="cash" value="cash">
-                            <label for="cash">Cash</label>
-                        </div>
-                        <div class="radio-input">
-                            <input type="radio" id="card" name="card" value="card">
-                            <label for="card">Card</label>
-                        </div>
                     </fieldset>
+                    <div class="radio-fields-container">
+                        <div class="radio-input">
+                            <input type="radio" id="cash" name="payment-type" value="cash">
+                            <label for="cash"><i class="fa-solid fa-money-bill"></i> Cash</label>
+                        </div>
+                        <div class="radio-input">
+                            <input type="radio" id="card" name="payment-type" value="card">
+                            <label for="card"><i class="fa-solid fa-credit-card"></i> Card</label>
+                        </div>
+                    </div>
                     <fieldset class="order-form_checkbox">
                         <legend>Choose 2 gifts: (optional)</legend>
+                    </fieldset>
+                    <div class="checkbox-fields-container">
                         <div class="checkbox_option">
-                            <input type="checkbox" id="gift-packing" name="gift-packing">
+                            <input type="checkbox" id="gift-packing" name="gift-packing" checked>
                             <label for="gift-packing">Pack as a gift</label>
                         </div>
                         <div class="checkbox_option">
@@ -94,14 +99,15 @@
                             <input type="checkbox" id="pen-or-pencil" name="pen-or-pencil">
                             <label for="pen-or-pencil">Branded pen or pencil</label>
                         </div>
-                    </fieldset>
-                    <button type="submit" disabled>Complete order</button>
+                    </div>
+                    <button class="btn_1" type="submit" disabled>Complete order</button>
                 </form>
             </section>
         </main>
-        <!-- footer -->
     </div>
-    <script src="./order.js"></script>
+    <script src="../../assets/scripts/header.js"></script>
+    <script src="../../assets/scripts/footer.js"></script>
+    <script src="./delivery.js"></script>
 </body>
 
 </html>
