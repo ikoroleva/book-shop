@@ -7,6 +7,9 @@
 .order-form {
     width: 900px;
     margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 2em;
     color: #2F2F2F;
     font-family: 'Source Sans Pro', sans-serif;
@@ -184,4 +187,48 @@ input[type="radio"]:focus+label {
 
 .checkbox_option input:disabled+label:after {
     background: #909090
+}
+
+form .btn_1 {
+    margin-top: 30px;
+    align-self: center;
+}
+
+.summary-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 30px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
