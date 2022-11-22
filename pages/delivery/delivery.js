@@ -6,6 +6,7 @@ container.prepend(createHeader());
 // create footer
 container.append(createFooter());
 
+const section = document.querySelector('.section');
 const form = document.querySelector('.order-form')
 const btnSubmit = document.querySelector('.btn_1');
 const firstName = document.getElementById('first-name');
@@ -154,5 +155,28 @@ const checkForm = () => {
 form.addEventListener("keyup", checkForm);
 inputs.forEach((input) => input.addEventListener('blur', checkForm));
 
-btnSubmit.addEventListener('click', () => { })
+
+
+
+
+const span = document.getElementsByClassName("close")[0];
+
+btnSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+    const modal = document.createElement('div');
+    modal.classList.add('summary-modal');
+    modal.innerHTML = ` <div class="modal-content">
+    <a href="../main/index.html"><span class="close">&times;</span></a>
+    <h3>Thank you for your order!</h3>
+    <p>Hi <strong class="client-info">${firstName.value + ' ' + lastName.value}</strong>, thanks for placing the order with BookStore
+        Online!</p>
+        <p>Your books will be delivered at <strong class="delivery-date-info">${deliveryDate.value}</strong> to your
+        address <strong class="address-info">${street.value + ' ' + house.value + ' ' + flat.value}</strong></p>
+    <p>Enjoy the reading! Your Bookstore team <i class="fa-regular fa-heart"></i></p>
+    <a href="../main/index.html"><button class="cart-order_btn">Close</button></a>
+    </div>`;
+    section.append(modal);
+})
+
+
 
